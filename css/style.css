@@ -83,3 +83,58 @@ button {
    color: white;
    border: none;
 }
+
+
+/* Theme Toggle Button */
+.theme-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.theme-btn:hover {
+  background: #003d82;
+}
+
+/* Dark Theme */
+body.dark {
+  background: #1c1c1c;
+  color: #f0f0f0;
+}
+
+body.dark header h1 {
+  color: #66b2ff;
+}
+
+body.dark .registration-form {
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark input, 
+body.dark select, 
+body.dark textarea {
+  background: #333;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark .submit-btn {
+  background: #66b2ff;
+  color: #000;
+}
+body.dark .submit-btn:hover {
+  background: #3399ff;
+}
+
+/* Valid/Invalid real-time validation feedback */
+input.valid, select.valid {
+  border-color: green;
+}
+input.invalid, select.invalid {
+  border-color: red;
+}

@@ -15,6 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const ticketError = document.getElementById("ticket-error");
   const mealError = document.getElementById("meal-error");
 
+    // === THEME TOGGLE ===
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+      themeToggleBtn.textContent = "☀️ Light Mode";
+    } else {
+      themeToggleBtn.textContent = "🌙 Dark Mode";
+    }
+  });
+
   // Validation functions
   function validateName() {
     if (name.value.trim().length < 3) {
